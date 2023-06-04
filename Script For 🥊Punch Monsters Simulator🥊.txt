@@ -1,0 +1,577 @@
+local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local window = kavoUi.CreateLib("🥊Punch Monster Simulator🥊","Midnight")
+
+---Tabs
+ 
+local Tab1 = window:NewTab("World 1")
+local Tab1Section = Tab1:NewSection("Free Roblox Scripts")
+local Tab2 = window:NewTab("World 2")
+local Tab2Section = Tab2:NewSection("Free Roblox Scripts")
+local Tab2Section = Tab2:NewSection("Made By biel17125")
+local Tab2Section = Tab2:NewSection("freerobloxscripts.com")
+local Tab3 = window:NewTab("World 3")
+local Tab3Section = Tab3:NewSection("Free Roblox Scripts")
+local Tab3Section = Tab3:NewSection("Made By biel17125")
+local Tab3Section = Tab3:NewSection("freerobloxscripts.com")
+local Tab4 = window:NewTab("Sup")
+local Tab4Section = Tab4:NewSection("Sup is word")
+local Tab1Section = Tab1:NewSection("Made By biel17125")
+local Tab1Section = Tab1:NewSection("freerobloxscripts.com")
+ 
+---Buttons
+
+Tab1Section:NewToggle("Auto Rebirth", "Rebirth automatically", function(state)
+    if state then
+_G.autorebirth = true
+while _G.autorebirth == true do
+game:GetService("ReplicatedStorage").Rebirth:FireServer()
+wait(1.5)
+end
+     else
+_G.autorebirth = false
+end
+end)
+
+Tab1Section:NewToggle("Auto Train (Zone 1)", "train without moving", function(state)
+    if state then
+_G.autotrain1 = true
+while _G.autotrain1 == true do
+local args = {[1] = "0A",
+    [2] = 1}
+game:GetService("ReplicatedStorage").Train:FireServer(unpack(args))
+wait(0.5)
+end
+     else
+_G.autotrain1 = false
+end
+end)
+
+Tab1Section:NewToggle("Auto trophies (Zone 1)", "Get trophies without moving", function(state)
+    if state then
+_G.autotrophies1 = true
+while _G.autotrophies1 == true do
+local args = {[1] = 1}
+game:GetService("ReplicatedStorage").Win:FireServer(unpack(args))
+wait(0.5)
+end
+    else
+_G.autotrophies1 = false
+end
+end)
+
+Tab1Section:NewToggle("Auto Train (Zone 2)", "train without moving", function(state)
+    if state then
+_G.autotrain2 = true
+while _G.autotrain2 == true do
+local args = {[1] = "0B",
+    [2] = 1}
+game:GetService("ReplicatedStorage").Train:FireServer(unpack(args))
+wait(0.5)
+end
+     else
+_G.autotrain2 = false
+end
+end)
+
+Tab1Section:NewToggle("Auto trophies (Zone 2)", "Get trophies without moving", function(state)
+    if state then
+_G.autotrophies2 = true
+while _G.autotrophies2 == true do
+local args = {[1] = 2}
+game:GetService("ReplicatedStorage").Win:FireServer(unpack(args))
+wait(0.5)
+end
+    else
+_G.autotrophies2 = false
+end
+end)
+
+Tab1Section:NewToggle("Auto Train (Zone 3)", "train without moving", function(state)
+    if state then
+_G.autotrain3 = true
+while _G.autotrain3 == true do
+local args = {[1] = "0C",
+    [2] = 1}
+game:GetService("ReplicatedStorage").Train:FireServer(unpack(args))
+wait(0.5)
+end
+     else
+_G.autotrain3 = false
+end
+end)
+
+Tab1Section:NewToggle("Auto trophies (Zone 3)", "Get trophies without moving", function(state)
+    if state then
+_G.autotrophies3 = true
+while _G.autotrophies3 == true do
+local args = {[1] = 3}
+game:GetService("ReplicatedStorage").Win:FireServer(unpack(args))
+wait(0.5)
+end
+    else
+_G.autotrophies3 = false
+end
+end)
+
+Tab1Section:NewToggle("Auto Train (Zone 4)", "train without moving", function(state)
+    if state then
+_G.autotrain4 = true
+while _G.autotrain4 == true do
+local args = {[1] = "0D",
+    [2] = 1}
+game:GetService("ReplicatedStorage").Train:FireServer(unpack(args))
+wait(0.5)
+end
+     else
+_G.autotrain4 = false
+end
+end)
+
+Tab1Section:NewToggle("Auto trophies (Zone 4)", "Get trophies without moving", function(state)
+    if state then
+_G.autotrophies4 = true
+while _G.autotrophies4 == true do
+local args = {[1] = 4}
+game:GetService("ReplicatedStorage").Win:FireServer(unpack(args))
+wait(0.5)
+end
+    else
+_G.autotrophies4 = false
+end
+end)
+
+Tab1Section:NewToggle("Auto Train (Zone 5)", "train without moving", function(state)
+    if state then
+_G.autotrain5 = true
+while _G.autotrain5 == true do
+local args = {[1] = "0E",
+    [2] = 1}
+game:GetService("ReplicatedStorage").Train:FireServer(unpack(args))
+wait(0.5)
+end
+     else
+_G.autotrain5 = false
+end
+end)
+
+Tab1Section:NewToggle("Auto trophies (Zone 5)", "Get trophies without moving", function(state)
+    if state then
+_G.autotrophies5 = true
+while _G.autotrophies5 == true do
+local args = {[1] = 5}
+game:GetService("ReplicatedStorage").Win:FireServer(unpack(args))
+wait(0.5)
+end
+    else
+_G.autotrophies5 = false
+end
+end)
+
+Tab1Section:NewToggle("Auto Train (Zone 6)", "train without moving", function(state)
+    if state then
+_G.autotrain6 = true
+while _G.autotrain6 == true do
+local args = {[1] = "0F",
+    [2] = 1}
+game:GetService("ReplicatedStorage").Train:FireServer(unpack(args))
+wait(0.5)
+end
+     else
+_G.autotrain6 = false
+end
+end)
+
+Tab1Section:NewToggle("Auto trophies (Zone 6)", "Get trophies without moving", function(state)
+    if state then
+_G.autotrophies6 = true
+while _G.autotrophies6 == true do
+local args = {[1] = 6}
+game:GetService("ReplicatedStorage").Win:FireServer(unpack(args))
+wait(0.5)
+end
+    else
+_G.autotrophies6 = false
+end
+end)
+
+Tab2Section:NewToggle("Auto Train (Zone 1)", "train without moving", function(state)
+    if state then
+_G.autotrain7 = true
+while _G.autotrain7 == true do
+local args = {[1] = "0G",
+    [2] = 1}
+game:GetService("ReplicatedStorage").Train:FireServer(unpack(args))
+wait(0.5)
+end
+     else
+_G.autotrain7 = false
+end
+end)
+
+Tab2Section:NewToggle("Auto trophies (Zone 1)", "Get trophies without moving", function(state)
+    if state then
+_G.autotrophies7 = true
+while _G.autotrophies7 == true do
+local args = {[1] = 7}
+game:GetService("ReplicatedStorage").Win:FireServer(unpack(args))
+wait(0.5)
+end
+    else
+_G.autotrophies7 = false
+end
+end)
+
+Tab2Section:NewToggle("Auto Train (Zone 2)", "train without moving", function(state)
+    if state then
+_G.autotrain8 = true
+while _G.autotrain8 == true do
+local args = {[1] = "0H",
+    [2] = 1}
+game:GetService("ReplicatedStorage").Train:FireServer(unpack(args))
+wait(0.5)
+end
+     else
+_G.autotrain8 = false
+end
+end)
+
+Tab2Section:NewToggle("Auto trophies (Zone 2)", "Get trophies without moving", function(state)
+    if state then
+_G.autotrophies8 = true
+while _G.autotrophies8 == true do
+local args = {[1] = 8}
+game:GetService("ReplicatedStorage").Win:FireServer(unpack(args))
+wait(0.5)
+end
+    else
+_G.autotrophies8 = false
+end
+end)
+
+Tab2Section:NewToggle("Auto Train (Zone 3)", "train without moving", function(state)
+    if state then
+_G.autotrain9 = true
+while _G.autotrain9 == true do
+local args = {[1] = "0I",
+    [2] = 1}
+game:GetService("ReplicatedStorage").Train:FireServer(unpack(args))
+wait(0.5)
+end
+     else
+_G.autotrain9 = false
+end
+end)
+
+Tab2Section:NewToggle("Auto trophies (Zone 3)", "Get trophies without moving", function(state)
+    if state then
+_G.autotrophies9 = true
+while _G.autotrophies9 == true do
+local args = {[1] = 9}
+game:GetService("ReplicatedStorage").Win:FireServer(unpack(args))
+wait(0.5)
+end
+    else
+_G.autotrophies9 = false
+end
+end)
+
+Tab2Section:NewToggle("Auto Train (Zone 4)", "train without moving", function(state)
+    if state then
+_G.autotrain10 = true
+while _G.autotrain10 == true do
+local args = {[1] = "0J",
+    [2] = 1}
+game:GetService("ReplicatedStorage").Train:FireServer(unpack(args))
+wait(0.5)
+end
+     else
+_G.autotrain10 = false
+end
+end)
+
+Tab2Section:NewToggle("Auto trophies (Zone 4)", "Get trophies without moving", function(state)
+    if state then
+_G.autotrophies10 = true
+while _G.autotrophies10 == true do
+local args = {[1] = 10}
+game:GetService("ReplicatedStorage").Win:FireServer(unpack(args))
+wait(0.5)
+end
+    else
+_G.autotrophies10 = false
+end
+end)
+
+Tab2Section:NewToggle("Auto Train (Zone 5)", "train without moving", function(state)
+    if state then
+_G.autotrain11 = true
+while _G.autotrain11 == true do
+local args = {[1] = "0K",
+    [2] = 1}
+game:GetService("ReplicatedStorage").Train:FireServer(unpack(args))
+wait(0.5)
+end
+     else
+_G.autotrain11 = false
+end
+end)
+
+Tab2Section:NewToggle("Auto trophies (Zone 5)", "Get trophies without moving", function(state)
+    if state then
+_G.autotrophies11 = true
+while _G.autotrophies11 == true do
+local args = {[1] = 11}
+game:GetService("ReplicatedStorage").Win:FireServer(unpack(args))
+wait(0.5)
+end
+    else
+_G.autotrophies11 = false
+end
+end)
+
+Tab2Section:NewToggle("Auto Train (Zone 6)", "train without moving", function(state)
+    if state then
+_G.autotrain12 = true
+while _G.autotrain12 == true do
+local args = {[1] = "0L",
+    [2] = 1}
+game:GetService("ReplicatedStorage").Train:FireServer(unpack(args))
+wait(0.5)
+end
+     else
+_G.autotrain12 = false
+end
+end)
+
+Tab2Section:NewToggle("Auto trophies (Zone 6)", "Get trophies without moving", function(state)
+    if state then
+_G.autotrophies12 = true
+while _G.autotrophies12 == true do
+local args = {[1] = 12}
+game:GetService("ReplicatedStorage").Win:FireServer(unpack(args))
+wait(0.5)
+end
+    else
+_G.autotrophies12 = false
+end
+end)
+
+Tab3Section:NewToggle("Auto Train (Zone 1)", "train without moving", function(state)
+    if state then
+_G.autotrain13 = true
+while _G.autotrain13 == true do
+local args = {[1] = "0M",
+    [2] = 1}
+game:GetService("ReplicatedStorage").Train:FireServer(unpack(args))
+wait(0.5)
+end
+     else
+_G.autotrain13 = false
+end
+end)
+
+Tab3Section:NewToggle("Auto trophies (Zone 1)", "Get trophies without moving", function(state)
+    if state then
+_G.autotrophies13 = true
+while _G.autotrophies13 == true do
+local args = {[1] = 13}
+game:GetService("ReplicatedStorage").Win:FireServer(unpack(args))
+wait(0.5)
+end
+    else
+_G.autotrophies13 = false
+end
+end)
+
+Tab3Section:NewToggle("Auto Train (Zone 2)", "train without moving", function(state)
+    if state then
+_G.autotrain14 = true
+while _G.autotrain14 == true do
+local args = {[1] = "0N",
+    [2] = 1}
+game:GetService("ReplicatedStorage").Train:FireServer(unpack(args))
+wait(0.5)
+end
+     else
+_G.autotrain14 = false
+end
+end)
+
+Tab3Section:NewToggle("Auto trophies (Zone 2)", "Get trophies without moving", function(state)
+    if state then
+_G.autotrophies14 = true
+while _G.autotrophies14 == true do
+local args = {[1] = 14}
+game:GetService("ReplicatedStorage").Win:FireServer(unpack(args))
+wait(0.5)
+end
+    else
+_G.autotrophies14 = false
+end
+end)
+
+Tab3Section:NewToggle("Auto Train (Zone 3)", "train without moving", function(state)
+    if state then
+_G.autotrain15 = true
+while _G.autotrain15 == true do
+local args = {[1] = "0O",
+    [2] = 1}
+game:GetService("ReplicatedStorage").Train:FireServer(unpack(args))
+wait(0.5)
+end
+     else
+_G.autotrain15 = false
+end
+end)
+
+Tab3Section:NewToggle("Auto trophies (Zone 3)", "Get trophies without moving", function(state)
+    if state then
+_G.autotrophies15 = true
+while _G.autotrophies15 == true do
+local args = {[1] = 15}
+game:GetService("ReplicatedStorage").Win:FireServer(unpack(args))
+wait(0.5)
+end
+    else
+_G.autotrophies15 = false
+end
+end)
+
+Tab3Section:NewToggle("Auto Train (Zone 4)", "train without moving", function(state)
+    if state then
+_G.autotrain16 = true
+while _G.autotrain16 == true do
+local args = {[1] = "0P",
+    [2] = 1}
+game:GetService("ReplicatedStorage").Train:FireServer(unpack(args))
+wait(0.5)
+end
+     else
+_G.autotrain16 = false
+end
+end)
+
+Tab3Section:NewToggle("Auto trophies (Zone 4)", "Get trophies without moving", function(state)
+    if state then
+_G.autotrophies16 = true
+while _G.autotrophies16 == true do
+local args = {[1] = 16}
+game:GetService("ReplicatedStorage").Win:FireServer(unpack(args))
+wait(0.5)
+end
+    else
+_G.autotrophies16 = false
+end
+end)
+
+Tab3Section:NewToggle("Auto Train (Zone 5)", "train without moving", function(state)
+    if state then
+_G.autotrain17 = true
+while _G.autotrain17 == true do
+local args = {[1] = "0Q",
+    [2] = 1}
+game:GetService("ReplicatedStorage").Train:FireServer(unpack(args))
+wait(0.5)
+end
+     else
+_G.autotrain17 = false
+end
+end)
+
+Tab3Section:NewToggle("Auto trophies (Zone 5)", "Get trophies without moving", function(state)
+    if state then
+_G.autotrophies17 = true
+while _G.autotrophies17 == true do
+local args = {[1] = 17}
+game:GetService("ReplicatedStorage").Win:FireServer(unpack(args))
+wait(0.5)
+end
+    else
+_G.autotrophies17 = false
+end
+end)
+
+Tab3Section:NewToggle("Auto Train (Zone 6)", "train without moving", function(state)
+    if state then
+_G.autotrain18 = true
+while _G.autotrain18 == true do
+local args = {[1] = "0R",
+    [2] = 1}
+game:GetService("ReplicatedStorage").Train:FireServer(unpack(args))
+wait(0.5)
+end
+     else
+_G.autotrain18 = false
+end
+end)
+
+Tab3Section:NewToggle("Auto trophies (Zone 6)", "Get trophies without moving", function(state)
+    if state then
+_G.autotrophies18 = true
+while _G.autotrophies18 == true do
+local args = {[1] = 18}
+game:GetService("ReplicatedStorage").Win:FireServer(unpack(args))
+wait(0.5)
+end
+    else
+_G.autotrophies18 = false
+end
+end)
+
+Tab3Section:NewToggle("Auto Train (Zone 7)", "train without moving", function(state)
+    if state then
+_G.autotrain19 = true
+while _G.autotrain19 == true do
+local args = {[1] = "0S",
+    [2] = 1}
+game:GetService("ReplicatedStorage").Train:FireServer(unpack(args))
+wait(0.5)
+end
+     else
+_G.autotrain19 = false
+end
+end)
+
+Tab3Section:NewToggle("Auto trophies (Zone 7)", "Get trophies without moving", function(state)
+    if state then
+_G.autotrophies19 = true
+while _G.autotrophies19 == true do
+local args = {[1] = 19}
+game:GetService("ReplicatedStorage").Win:FireServer(unpack(args))
+wait(0.5)
+end
+    else
+_G.autotrophies19 = false
+end
+end)
+
+Tab3Section:NewToggle("Auto Train (Zone 8)", "train without moving", function(state)
+    if state then
+_G.autotrain20 = true
+while _G.autotrain20 == true do
+local args = {[1] = "0T",
+    [2] = 1}
+game:GetService("ReplicatedStorage").Train:FireServer(unpack(args))
+wait(0.5)
+end
+     else
+_G.autotrain20 = false
+end
+end)
+
+Tab3Section:NewToggle("Auto trophies (Zone 8)", "Get trophies without moving", function(state)
+    if state then
+_G.autotrophies20 = true
+while _G.autotrophies20 == true do
+local args = {[1] = 20}
+game:GetService("ReplicatedStorage").Win:FireServer(unpack(args))
+wait(0.5)
+end
+    else
+_G.autotrophies20 = false
+end
+end)
+
+Tab4Section:NewButton("Keyboard","Pc Like Keyboard",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
+end)
